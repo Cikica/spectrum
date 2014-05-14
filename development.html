@@ -1,0 +1,78 @@
+<html>
+<head>
+  	<link rel="stylesheet" type="text/css" href="css/dark.css">
+  	<!-- // <script data-directory="js" src="js/require.js"></script> -->
+  	<script data-directory="js" src="js/require_spectrum.js"></script>
+  	<!-- <script src="final/require_spectrum.js"></script> -->
+</head>
+<body>
+	<div class="main">
+		<div id="gallery" class="gallery_init" style="width:100%"></div>
+		<!-- <div style="width : 100px; height : 100px; position: absolute; background-color: #222;"></div> -->
+	</div>
+	<script>
+	// setTimeout(function () {
+		window.spectrum.create({
+			name   : "gallery_one",
+			gallery: {
+				images : [
+					{
+						url  : "images/01.jpg",
+						tags : ["stuff"]
+					},
+					{
+						url  : "images/02.jpg",
+						tags : ["stuff2"]
+					},
+					{
+						url  : "images/03.jpg",
+						tags : ["stuff"]
+					},
+					{
+						url  : "images/11.jpg",
+						tags : ["stuff2"]
+					},
+					{
+						url  : "images/14.jpg",
+						tags : ["stuff2"]
+					},
+					{
+						url  : "images/15.jpg",
+						tags : ["stuff2"]
+					}
+				],	
+				// images : {
+				// 	// directory : "https://dl.dropboxusercontent.com/u/56026180/Images/Art3",
+		  //     		directory : "images",
+				// 	names     : [
+				// 		"01", "02", "03", "24", "05", "26", "07", "08"
+				// 		// "kingofnagas", "longtrip", "thebegginingoffreedom", "thedreamer", 
+				// 		// "trainyour", "elephant", "running"
+				// 	],
+				// 	tags      : [
+				// 		["magical"],
+				// 		["magical"],
+				// 		["water stuff"],
+				// 		["water stuff"],
+				// 		["animal"],
+				// 		["animal"],
+				// 		["animal"],
+				// 		["animal"],
+				// 	],
+				// },
+				preset  : "square_grid",
+				details : {
+					body : {
+						parent      : document.getElementById("gallery"),
+						// mimic_width : false,
+						// width       : 500,
+						// image_width : 250,
+				// 		align       : "fill",
+					},
+				},
+			}
+		});
+	// }, 5000 )
+	</script>
+</body>
+</html>
